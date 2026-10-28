@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In to LeechLab</title>
+    <meta
+      name="description"
+      content="By gamers, for gamers — we craft masterful games with focus, effort, and vision, all for the love of the game."
+    />
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" />
+    <link rel="canonical" href="https://www.yoursite.com/your-page" />
+    <link rel="stylesheet" href="../../main.css" />
+    <link rel="stylesheet" href="signIn.css" />
+  </head>
+  <body>
+    <video
+      autoplay
+      muted
+      loop
+      style="pointer-events: none"
+      id="videoBackground"
+    >
+      <source
+        src="https://raw.githubusercontent.com/LeechLab/LeechLab-WebApp-Logos-Images/refs/heads/main/Backgrounds/LeechLabBackground.mp4"
+        type="video/mp4"
+      />
+    </video>
+    <main>
+      <form id="main_sign_in">
+        <h2>SIGN IN TO</h2>
+        <img
+          style="padding-bottom: 60px"
+          id="titleImage"
+          src="https://raw.githubusercontent.com/LeechLab/LeechLab-WebApp-Logos-Images/refs/heads/main/Logos/LeechTitle.svg"
+          alt="LeechLab Logo"
+        />
+        <div class="feild">
+          <h3>Username/Email:</h3>
+          <input
+            type="text"
+            name="signInUsername"
+            maxlength="100"
+            placeholder="Enter your username or email..."
+          />
+          <p id="IncorrectUsername" class="warning hidden">
+            Could not find your username!
+          </p>
+          <p id="IncorrectEmail" class="warning hidden">
+            Could not find your email!
+          </p>
+          <p id="EmptyUsername" class="warning hidden">
+            This feild is required!
+          </p>
+        </div>
+        <div class="feild">
+          <h3>Password:</h3>
+          <input
+            type="password"
+            name="signInPassword"
+            placeholder="Enter your password..."
+            maxlength="64"
+          />
+          <a id="signInPassword" class="showPassword" href="">SHOW</a>
+          <p id="EmptyPassword" class="warning hidden">
+            This feild is required!
+          </p>
+          <p id="IncorrectPassword" class="warning hidden">
+            The password is incorrect!
+          </p>
+        </div>
+        <div id="rememberMeFeild">
+          <input type="checkbox" name="remeberMe" />
+          <h3>Stay signed in</h3>
+        </div>
+        <button type="button" id="signInButton" onclick="signIn()">
+          SIGN IN
+        </button>
+        <a
+          style="margin-top: 3rem"
+          id="createAccount"
+          class="quickAccountLink"
+          href=""
+          >Don't have leechlab account? Create a new one!</a
+        >
+        <a class="quickAccountLink" id="forgotPassword" href=""
+          >Forgot your password?</a
+        >
+      </form>
+      <form class="hidden" id="main_create_account">
+        <h2>CREATE A NEW</h2>
+        <img
+          id="titleImage"
+          src="https://raw.githubusercontent.com/LeechLab/LeechLab-WebApp-Logos-Images/refs/heads/main/Logos/LeechTitle.svg"
+          alt="LeechLab Logo"
+        />
+        <h2>ACCOUNT</h2>
+        <div class="feild">
+          <h3>Username:</h3>
+          <input
+            type="text"
+            name="createAccountUsername"
+            maxlength="16"
+            placeholder="Enter your username..."
+          />
+          <p id="E:U1" class="warning hidden accountCreationError">
+            The length of the username should be 3-16 characters!
+          </p>
+          <p id="E:U3" class="warning hidden accountCreationError">
+            Username is taken!
+          </p>
+          <p id="E:U2" class="warning hidden accountCreationError">
+            Usernames must not use forbidden characters or spaces!
+          </p>
+          <p class="warning hidden">
+            Usernames must not contain profanity or offensive language!
+          </p>
+        </div>
+        <div class="feild">
+          <h3>Email:</h3>
+          <input
+            type="text"
+            name="createAccountEmail"
+            maxlength="100"
+            placeholder="Enter your email..."
+          />
+          <p class="warning hidden">This feild is required!</p>
+          <p id="E:E1" class="warning hidden accountCreationError">
+            An account with this email already exists!
+          </p>
+          <p id="E:E2" class="warning hidden accountCreationError">
+            Please enter a valid email address!
+          </p>
+        </div>
+        <div class="feild">
+          <h3>Password:</h3>
+          <input
+            type="password"
+            name="createAccountPassword"
+            placeholder="Enter your password..."
+            maxlength="64"
+          />
+          <a id="createAccountPassword" class="showPassword" href="">SHOW</a>
+          <p class="warning hidden">This feild is required!</p>
+          <p id="E:P1" class="warning hidden accountCreationError">
+            Password must be at least 8 characters long!
+          </p>
+          <p id="E:P8" class="warning hidden accountCreationError">
+            Password is too long!
+          </p>
+          <p id="E:P2" class="warning hidden accountCreationError">
+            Password must have at least one lowercase letter!
+          </p>
+          <p id="E:P3" class="warning hidden accountCreationError">
+            Password must have at least one capital letter!
+          </p>
+          <p id="E:P9" class="warning hidden accountCreationError">
+            There must be at least one number!
+          </p>
+          <p id="E:P5" class="warning hidden accountCreationError">
+            Password must have at least one special character!
+          </p>
+          <p id="E:P4" class="warning hidden accountCreationError">
+            Password cannot contain spaces!
+          </p>
+          <p id="E:P6" class="warning hidden accountCreationError">
+            Password cannot contain your username or email!
+          </p>
+          <p id="E:P7" class="warning hidden accountCreationError">
+            Password cannot contain the word "password"! (lock in, twin...)
+          </p>
+        </div>
+        <div class="feild">
+          <h3>Confirm Password:</h3>
+          <input
+            type="password"
+            name="createAccountConfirmPassword"
+            placeholder="Confirm your password..."
+            maxlength="64"
+          /><a id="createAccountConfirmPassword" class="showPassword" href=""
+            >SHOW</a
+          >
+          <p id="confirmPasswordNotMatch" class="warning hidden">
+            Passwords do not match!
+          </p>
+        </div>
+        <h4>
+          By creating a new account, you agree to our terms and conditions!
+        </h4>
+        <button
+          id="createAccountButton"
+          type="button"
+          onclick="createAccount()"
+        >
+          CREATE ACCOUNT
+        </button>
+        <a style="margin-top: 3rem" id="signIn" class="quickAccountLink" href=""
+          >Already have a leechlab account? Sign In!</a
+        >
+      </form>
+      <form class="hidden" id="main_verify">
+        <h3 style="text-align: center">
+          A VERIFICATION CODE WAS SENT TO THE EMAIL
+        </h3>
+        <h2
+          id="sentVerifyEmail"
+          style="letter-spacing: normal; font-size: 2rem"
+        >
+          example@email.com
+        </h2>
+        <div id="verificationCode">
+          <input
+            type="text"
+            name="verify"
+            id="verify1"
+            inputmode="numeric"
+            maxlength="1"
+          />
+          <input
+            type="text"
+            name="verify"
+            id="verify2"
+            inputmode="numeric"
+            maxlength="1"
+          />
+          <input
+            type="text"
+            name="verify"
+            id="verify3"
+            inputmode="numeric"
+            maxlength="1"
+          />
+          <input
+            type="text"
+            name="verify"
+            id="verify4"
+            inputmode="numeric"
+            maxlength="1"
+          />
+          <input
+            type="text"
+            name="verify"
+            id="verify5"
+            inputmode="numeric"
+            maxlength="1"
+          />
+          <input
+            type="text"
+            name="verify"
+            id="verify6"
+            inputmode="numeric"
+            maxlength="1"
+          />
+        </div>
+        <p
+          id="verificationCodeNotFilledIn"
+          class="warning hidden accountCreationError"
+        >
+          Please enter each digit of the verification code!
+        </p>
+        <p id="E:V1" class="warning hidden accountCreationError">
+          You entered the incorrect code, try again!
+        </p>
+        <p id="E:V3" class="warning hidden accountCreationError">
+          You have failed too many times!
+        </p>
+        <button
+          style="margin-top: 1rem"
+          type="button"
+          id="verifyButton"
+          onclick="verifyCode()"
+        >
+          VERIFY
+        </button>
+        <p id="resendVerification">
+          Can't see it? Check spam or
+          <a class="quickAccountLink" onclick="sendNewCode()">
+            resend verification code!</a
+          >
+        </p>
+        <a id="signIn2" class="quickAccountLink" href=""
+          >Already have a leechlab account? Sign In!</a
+        >
+      </form>
+      <form class="hidden" id="forgot_password">
+        <h2>FORGOT YOUR PASSWORD?</h2>
+        <div class="feild">
+          <h3>Email:</h3>
+          <input
+            type="text"
+            name="forgotPasswordEmail"
+            maxlength="100"
+            placeholder="Enter your email..."
+          />
+          <p id="IncorrectForgottenEmail" class="warning hidden">
+            Could not find your email!
+          </p>
+          <p id="AlreadySentForgottenEmail" class="warning hidden">
+            The email to reset your password has already been sent. Wait 15
+            minutes to send another one.
+          </p>
+          <p id="EmptyForgottonEmail" class="warning hidden">
+            This feild is required!
+          </p>
+        </div>
+        <button type="button" id="sendResetButton" onclick="sendResetEmail()">
+          SEND RESET EMAIL</button
+        ><a
+          style="margin-top: 3rem"
+          id="createAccount2"
+          class="quickAccountLink"
+          href=""
+          >Don't have leechlab account? Create a new one!</a
+        >
+        <a id="signIn3" class="quickAccountLink" href=""
+          >Go back to the sign-in page!</a
+        >
+      </form>
+      <form class="hidden" id="resetPasswordSent">
+        <img
+          style="padding-bottom: 60px"
+          id="titleImage"
+          src="https://raw.githubusercontent.com/LeechLab/LeechLab-WebApp-Logos-Images/refs/heads/main/Logos/LeechTitle.svg"
+          alt="LeechLab Logo"
+        />
+        <p>
+          We’ve sent an email to the address linked to your account with
+          instructions for resetting your password.<br /><br />It should arrive
+          within a few minutes. If you don’t see it in your inbox,
+          <strong>check your spam or junk folder</strong>. Once you find it,
+          click the link inside and follow the steps to choose a new
+          password.<br /><br />For your security, the link will expire after
+          <strong>15 minutes</strong>, so be sure to use it soon. If you didn’t
+          request this reset, you can safely ignore the email, and your password
+          will stay the same.
+        </p>
+        <a
+          style="margin-top: 3rem"
+          id="signIn4"
+          class="quickAccountLink"
+          href=""
+          >Go back to the sign-in page!</a
+        >
+      </form>
+    </main>
+    <div id="footer-placeholder"></div>
+
+    <script src="../../footer.js" data-back-to-top="false"></script>
+    <script src="../../main.js" type="text/javascript"></script>
+    <script src="signIn.js" type="text/javascript"></script>
+  </body>
+</html>

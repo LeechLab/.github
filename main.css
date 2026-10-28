@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Electrolize&display=swap");
+:root {
+  --primary-color: #cecece;
+  --background-color: #0000008a;
+  --hover-color: #ff8000;
+  --red-color: #e6281e;
+  --hidden-color: #404040;
+  --darkred-color: #1b0404;
+}
+body {
+  background-image: linear-gradient(to bottom, #1b0201, #75140e);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+#videoBackground {
+  position: fixed;
+  scale: 105%;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -100;
+  opacity: 30%;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Electrolize", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.0625rem;
+}
+header {
+  display: grid;
+  grid-template-columns: 45% 1fr;
+  padding: 10px;
+  margin-top: 3rem;
+  width: calc(100% - 4rem);
+  left: 2rem;
+  background-color: transparent;
+  position: fixed;
+  transition: 0.25s;
+  border-radius: 5px;
+  z-index: 1;
+}
+header.scrolled {
+  background-color: #290200aa;
+}
+img {
+  pointer-events: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+#IntroGrid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: 1.25rem 1fr;
+  margin-left: 1.25rem;
+  align-items: center;
+}
+#headericon {
+  width: 1.25rem;
+}
+nav {
+  width: 100%;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  float: right;
+  width: fit-content;
+}
+nav ul li {
+  margin: 0 0.3rem;
+}
+.pageButton {
+  color: var(--primary-color);
+  text-align: center;
+  padding: 0.625rem 0.625rem;
+  text-decoration: none;
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+  font-size: 1.125rem;
+  display: inline-block;
+  transform: scaleY(0.85);
+  transition: 0.25s;
+}
+.pageButton:hover {
+  color: var(--hover-color);
+  border-color: var(--hover-color);
+  border-bottom: 5px solid var(--hover-color);
+  cursor: pointer;
+}
+.pageButton.active {
+  color: var(--red-color);
+  border-color: var(--red-color);
+  border-bottom: 5px solid var(--red-color);
+}
+p {
+  color: var(--primary-color);
+  font-size: 1rem;
+}
+#titleImage {
+  display: block;
+  margin: auto;
+  width: 80%;
+}
+main {
+  display: flow-root;
+  position: relative;
+  top: 280px;
+}
+h2 {
+  padding-bottom: 200px;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+  display: block;
+  margin: auto;
+  font-weight: bold;
+  transform: scaleY(0.85);
+  transform-origin: top;
+  color: var(--hover-color);
+  letter-spacing: 1.125rem;
+  font-size: 1.125rem;
+}
+h3 {
+  color: var(--primary-color);
+  text-align: left;
+  text-decoration: none;
+  font-size: 1.5rem;
+  display: inline-block;
+  transform: scaleY(0.85);
+  transition: 0.25s;
+}
+section {
+  padding: 0.625rem;
+  width: calc(100% - 4rem);
+  margin: auto;
+  margin-top: 3rem;
+  background-color: var(--background-color);
+  transition: 0.25s;
+  border-radius: 5px;
+  box-shadow: 0px 0px 2rem var(--background-color);
+}
+
+footer {
+  display: flow-root;
+  position: relative;
+  top: 500px;
+  padding: 2rem;
+  width: calc(100% - 4rem);
+  margin: auto;
+  background-color: var(--background-color);
+  box-shadow: 0px 0px 2rem var(--background-color);
+  transition: 0.25s;
+  border-radius: 5px;
+  margin-bottom: 50px;
+}
+
+#socials {
+  display: flex;
+  list-style: none;
+  width: 19rem;
+  gap: 10px;
+}
+#socials li:hover a {
+  filter: invert(50%) sepia(94%) saturate(228%) hue-rotate(-11deg)
+    brightness(82%) contrast(197%);
+  cursor: pointer;
+}
+#other {
+  display: flex;
+  list-style: none;
+  justify-self: right;
+  width: 23rem;
+  gap: 10px;
+}
+#other li,
+#socials li {
+  width: 100%;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  border-radius: 5px;
+  transition: 0.25s;
+  padding: 0.625rem;
+  text-align: center;
+}
+#other li a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+#socials li:hover,
+#other li:hover {
+  border-color: var(--hover-color);
+  cursor: pointer;
+}
+#other li:hover a {
+  color: var(--hover-color);
+  text-decoration: underline;
+  cursor: pointer;
+}
+#footerButtonGrid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: 1fr 1fr;
+}
+#support {
+  display: flex;
+  gap: 3rem;
+  justify-self: center;
+  margin-top: 1rem;
+  list-style: none;
+  width: 100%;
+}
+#support li {
+  margin-top: 0.5rem;
+}
+#support li a {
+  font-size: 0.75rem;
+}
+#support li a {
+  color: var(--hover-color);
+  text-decoration: none;
+}
+#support li:hover a {
+  color: var(--primary-color);
+  text-decoration: underline;
+  cursor: pointer;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 1000px var(--darkred-color) inset !important;
+  -webkit-text-fill-color: var(--primary-color) !important;
+}
