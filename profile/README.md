@@ -55,7 +55,7 @@ We aim to be everywhere players are:
 - Deploying the real-time multiplayer server infrastructure on Google Cloud Platform (Node.js).
 - Designing new game assets: map objects, tanks, and UI/menus.
 - Working closely with gameplay developers to align on design decisions and prioritize development tasks.
-  You can shoot me a message via Discord - [NandoWando](https://discord.com/users/1158922460431913020)
+  You can shoot me a message via Discord : [NandoWando's Discord DM](https://discord.com/users/1158922460431913020)
 
 ---
 
