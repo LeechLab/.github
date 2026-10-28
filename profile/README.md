@@ -1,4 +1,6 @@
-# LeechLab
+# [LeechLab](https://leechlab.github.io/.github/)
+
+Click our title to go to the main website!
 
 ### _By gamers, for gamers._
 
@@ -61,44 +63,14 @@ We aim to be everywhere players are:
 
 > **Under construction.** Our website and socials are on the way. Links below are placeholders.
 
-| Platform  | Link                                                                   |
-| --------- | ---------------------------------------------------------------------- |
-| Website   | `https://leechlab.example` _(coming soon)_                             |
-| Steam     | `https://store.steampowered.com/developer/MYSTEAMPAGE` _(coming soon)_ |
-| Instagram | `https://instagram.com/MYINSTAGRAM` _(coming soon)_                    |
-| GitHub    | `https://github.com/NandoWando`                                        |
-| Discord   | `https://discord.gg/MYINVITE` _(coming soon)_                          |
-| itch.io   | `https://MYUSERNAME.itch.io` _(coming soon)_                           |
-
----
-
-## Brand Guidelines
-
-Our look is a moody, dark UI with red as the signature color. Light gray is used for text, and orange is reserved for accents and hover states.
-
-| Role               | Color                  | Hex         |
-| ------------------ | ---------------------- | ----------- |
-| **Primary brand**  | Red                    | `#e6281e`   |
-| **Text**           | Light gray             | `#cecece`   |
-| **Accent / hover** | Orange                 | `#ff8000`   |
-| **Background**     | Semi-transparent black | `#0000008a` |
-| **Hidden / muted** | Dark gray              | `#404040`   |
-| **Dark red**       | Deep red               | `#1b0404`   |
-
-### CSS Variables
-
-```css
-:root {
-  --primary-color: #cecece; /* text color */
-  --red-color: #e6281e; /* true brand primary */
-  --hover-color: #ff8000; /* accent / hover */
-  --background-color: #0000008a;
-  --hidden-color: #404040;
-  --darkred-color: #1b0404;
-}
-```
-
-> **Note:** `--red-color` is our actual primary brand color. `--primary-color` is the light gray we use for text.
+| Platform  | Link                                                                    |
+| --------- | ----------------------------------------------------------------------- |
+| Website   | `https://leechlab.example` _(coming soon)_                              |
+| Steam     | `https://store.steampowered.com/developer/OURSTEAMPAGE` _(coming soon)_ |
+| Instagram | `https://instagram.com/OURINSTAGRAM` _(coming soon)_                    |
+| GitHub    | `https://github.com/NandoWando`                                         |
+| Discord   | `https://discord.gg/OURINVITE` _(coming soon)_                          |
+| itch.io   | `https://OURUSERNAME.itch.io` _(coming soon)_                           |
 
 ---
 
