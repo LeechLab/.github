@@ -1,4 +1,4 @@
-<h1 align="center">[LeechLab](https://leechlab.github.io/.github/)</h1>
+<img src="https://github.com/LeechLab/LeechLab-WebApp-Logos-Images/blob/main/Logos/LeechTitle.svg" alt="LeechLab">
 
 Click our title to go to the main website!
 
