@@ -1,6 +1,6 @@
-<img src="https://github.com/LeechLab/LeechLab-WebApp-Logos-Images/blob/main/Logos/LeechTitle.svg" alt="LeechLab">
+<img src="https://github.com/LeechLab/LeechLab-WebApp-Logos-Images/blob/main/Logos/LeechTitle.svg" alt="LeechLab" style="dispaly:block; margin: auto auto;">
 
-Click our title to go to the main website!
+[Click here to go to the main website!]("leechlab.github.io/.github/")
 
 ### _By gamers, for gamers._
 
