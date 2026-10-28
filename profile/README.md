@@ -65,10 +65,10 @@ We aim to be everywhere players are:
 
 | Platform  | Link                                                                    |
 | --------- | ----------------------------------------------------------------------- |
-| Website   | `https://leechlab.example` _(coming soon)_                              |
+| Website   | `https://leechlab.github.io/.github/` _(under construction)_            |
 | Steam     | `https://store.steampowered.com/developer/OURSTEAMPAGE` _(coming soon)_ |
 | Instagram | `https://instagram.com/OURINSTAGRAM` _(coming soon)_                    |
-| GitHub    | `https://github.com/NandoWando`                                         |
+| GitHub    | `https://github.com/LeechLab`                                           |
 | Discord   | `https://discord.gg/OURINVITE` _(coming soon)_                          |
 | itch.io   | `https://OURUSERNAME.itch.io` _(coming soon)_                           |
 
