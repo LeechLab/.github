@@ -1,4 +1,4 @@
-# [LeechLab](https://leechlab.github.io/.github/)
+<h1 align="center">[LeechLab](https://leechlab.github.io/.github/)</h1>
 
 Click our title to go to the main website!
 
@@ -10,7 +10,7 @@ LeechLab creates games for players to enjoy. We craft masterful games with focus
 
 ## About Us
 
-We're a passion-driven game studio. We don't chase money; we chase great games. Like Valve, we want to push innovation forward, and we make games because we love making them and want to share that passion with the world.
+We're a passion-driven game studio. We don't chase money; we chase great games. We want to push innovation forward, and we make games because we love making them and want to share that passion with the world.
 
 ## Our Goals
 
@@ -55,7 +55,7 @@ We aim to be everywhere players are:
 - Deploying the real-time multiplayer server infrastructure on Google Cloud Platform (Node.js).
 - Designing new game assets: map objects, tanks, and UI/menus.
 - Working closely with gameplay developers to align on design decisions and prioritize development tasks.
-  Follow development: [github.com/NandoWando](https://github.com/NandoWando)
+  Ask our developers: [NandoWando](https://github.com/NandoWando) or [RickyDaRick](https://github.com/RickyDaRick)
 
 ---
 
@@ -72,12 +72,8 @@ We aim to be everywhere players are:
 | Discord   | `https://discord.gg/OURINVITE` _(coming soon)_                          |
 | itch.io   | `https://OURUSERNAME.itch.io` _(coming soon)_                           |
 
----
-
-## Contact
-
 Reach out through any of the channels above once they go live. Until then, check back soon.
 
 ---
 
-<p align="center"><em>Made with love for the love of the game.</em><br><strong>LeechLab</strong></p>
+<p align="center"><em>For the love of the game.</em><br><strong>LeechLab</strong></p>
