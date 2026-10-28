@@ -50,7 +50,7 @@ We aim to be everywhere players are:
 
 ### Dev Notes
 
-[(NandoWando)](https://github.com/NandoWando)
+[NandoWando](https://github.com/NandoWando) Notes:
 
 - Deploying the real-time multiplayer server infrastructure on Google Cloud Platform (Node.js).
 - Designing new game assets: map objects, tanks, and UI/menus.
