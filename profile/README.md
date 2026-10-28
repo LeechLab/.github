@@ -53,7 +53,7 @@ We aim to be everywhere players are:
 - Deploying the real-time multiplayer server infrastructure on Google Cloud Platform (Node.js).
 - Designing new game assets: map objects, tanks, and UI/menus.
 - Working closely with gameplay developers to align on design decisions and prioritize development tasks.
-  Follow development: [github.com/MYGITHUBUSERNAME](https://github.com/MYGITHUBUSERNAME)
+  Follow development: [github.com/NandoWando](https://github.com/NandoWando)
 
 ---
 
@@ -66,7 +66,7 @@ We aim to be everywhere players are:
 | Website   | `https://leechlab.example` _(coming soon)_                             |
 | Steam     | `https://store.steampowered.com/developer/MYSTEAMPAGE` _(coming soon)_ |
 | Instagram | `https://instagram.com/MYINSTAGRAM` _(coming soon)_                    |
-| GitHub    | `https://github.com/MYGITHUBUSERNAME`                                  |
+| GitHub    | `https://github.com/NandoWando`                                        |
 | Discord   | `https://discord.gg/MYINVITE` _(coming soon)_                          |
 | itch.io   | `https://MYUSERNAME.itch.io` _(coming soon)_                           |
 
