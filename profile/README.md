@@ -48,12 +48,14 @@ We aim to be everywhere players are:
 - **New mechanics:** Fresh gameplay systems to master.
 - **New assets:** Redesigned map objects, tanks, and UI/menu interfaces, plus a new main website.
 
-### Dev Notes [(NandoWando)](https://github.com/NandoWando)
+### Dev Notes
+
+[(NandoWando)](https://github.com/NandoWando)
 
 - Deploying the real-time multiplayer server infrastructure on Google Cloud Platform (Node.js).
 - Designing new game assets: map objects, tanks, and UI/menus.
 - Working closely with gameplay developers to align on design decisions and prioritize development tasks.
-  You can shoot a message at me via Github - [NandoWando](https://github.com/NandoWando)
+  You can shoot me a message via Discord - [NandoWando](https://discord.com/users/1158922460431913020)
 
 ---
 
