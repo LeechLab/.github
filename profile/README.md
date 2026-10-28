@@ -1,4 +1,6 @@
-<img src="https://github.com/LeechLab/LeechLab-WebApp-Logos-Images/blob/main/Logos/LeechTitle.svg" alt="LeechLab" style="dispaly:block; margin: auto auto;">
+<img src="https://github.com/LeechLab/LeechLab-WebApp-Logos-Images/blob/main/Logos/LeechTitle.svg" alt="LeechLab" style="display: block;
+    width: 100px;
+    margin: auto;">
 
 [Click here to go to the main website!]("leechlab.github.io/.github/")
 
